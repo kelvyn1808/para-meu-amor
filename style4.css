@@ -35,7 +35,6 @@ body {
 .intro {
     margin-bottom: 30px;
 }
-
 .intro h1 {
     font-size: 3.5em;
     color: #ff3385;
@@ -44,7 +43,6 @@ body {
     margin-bottom: 10px;
     animation: fadeIn 2s ease-out;
 }
-
 .intro p {
     font-size: 1.3em;
     color: #333;
@@ -54,15 +52,20 @@ body {
 
 /* Animação de fade-in */
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Seção de vídeo */
 .video-container {
     margin-top: 50px;
 }
-
 .video-container h2 {
     font-size: 2.5em;
     color: #ff3385;
@@ -82,13 +85,11 @@ video {
 .mensagem {
     margin-top: 50px;
 }
-
 .mensagem h2 {
     font-size: 2.5em;
     color: #ff3385;
     margin-bottom: 20px;
 }
-
 .mensagem p {
     font-size: 1.2em;
     line-height: 1.8;
@@ -107,7 +108,6 @@ video {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .carta button:hover {
     background-color: #ff66b2;
     transform: scale(1.1);
@@ -124,24 +124,47 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    /* Ajusta os tamanhos da introdução */
     .intro h1 {
         font-size: 2.5em;
     }
-
     .intro p {
         font-size: 1.1em;
     }
 
+    /* Ajuste na mensagem */
     .mensagem h2 {
         font-size: 2em;
     }
-
     .mensagem p {
         font-size: 1em;
     }
 
+    /* Video responsivo */
     video {
-        width: 100%;
-        max-width: 100%;
+        width: 100%; /* O vídeo ocupa 100% da largura da tela */
+        max-width: 100%; /* Garante que o vídeo não ultrapasse o tamanho da tela */
+    }
+
+    /* Ajuste do botão */
+    .carta button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    /* Ajuste no wrapper para telas menores */
+    .wrapper {
+        padding: 20px;
+    }
+
+    /* Ajuste nas margens e elementos dentro do wrapper */
+    .intro {
+        margin-bottom: 20px;
+    }
+    .video-container {
+        margin-top: 30px;
+    }
+    .mensagem {
+        margin-top: 40px;
     }
 }
