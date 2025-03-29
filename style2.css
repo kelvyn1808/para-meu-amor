@@ -158,6 +158,9 @@ width: 90%;
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
+    .cabecalho{
+        max-width: 100%;
+    }
     .cabecalho h1 {
         font-size: 2.5em;
     }
