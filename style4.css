@@ -12,12 +12,14 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa toda a altura da tela */
+    align-items: flex-start; /* Alterar de center para flex-start */
     padding: 20px;
     overflow-x: hidden; /* Impede a rolagem horizontal */
+    overflow-y: auto; /* Permite rolar verticalmente */
     flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo toda a altura da tela */
 }
+
 
 /* Wrapper central */
 .wrapper {
