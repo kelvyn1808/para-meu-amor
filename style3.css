@@ -1,0 +1,37 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Garantir que o body tenha altura total da tela */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo na direção da coluna */
+    justify-content: center; /* Alinha o conteúdo no centro verticalmente */
+    align-items: center; /* Alinha o conteúdo no centro horizontalmente */
+    background-image: url("./img/download\ \(1\).jpg");
+    
+    margin: 0;
+    
+}
+h1, h2, h3 {
+    color: #fefefe;
+    font-size: 2rem;
+    margin-bottom: 30px; /* Espaçamento entre o texto e o botão */
+}
+.btn3{
+    border: none;
+    background: none;
+}
+  /* Responsividade - Ajusta o layout para telas menores */
+  @media (max-width: 768px) {
+
+  .btn3{
+    width: 100%;
+  }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }

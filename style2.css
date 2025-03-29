@@ -1,0 +1,184 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para o cabeçalho */
+.cabecalho {
+    text-align: center;
+    background-color: #fe46a2;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 5px solid #ff66b2;
+}
+
+.cabecalho h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.cabecalho h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.cabecalho .p1 {
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin-top: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para a seção de fotos */
+.pag2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.serie1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.flash img {
+    max-width: 640px;
+    height: 360px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flash img:hover {
+    transform: scale(1.05);
+}
+.flash .p3{
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 200px; /* Garantindo um tamanho mínimo para o texto */
+    transition: 0,03s;
+}
+
+/* Estilo para o botão */
+.b {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ff66b2; /* Cor suave de rosa */
+    color: white;
+    font-size: 1.3em; /* Aumentar o tamanho da fonte para dar mais destaque */
+    border: 2px solid #ff66b2; /* Borda rosa clara */
+    border-radius: 30px; /* Cantos bem arredondados */
+    cursor: pointer;
+    text-transform: uppercase; /* Deixar o texto maiúsculo para um estilo mais sofisticado */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    transition: all 0.4s ease; /* Transição suave para todos os efeitos */
+    box-shadow: 0 6px 12px rgba(255, 102, 178, 0.3); /* Sombra suave no botão */
+    font-weight: bold; /* Deixa o texto mais destacado */
+}
+
+.b:hover {
+    background-color: #ff3385; /* Cor mais intensa de rosa quando o mouse passa sobre o botão */
+    border-color: #ff3385; /* Altera a cor da borda para o mesmo tom do fundo */
+    box-shadow: 0 8px 16px rgba(255, 51, 133, 0.5); /* Aumenta a sombra no hover */
+    transform: scale(1.1); /* Faz o botão crescer um pouco para um efeito mais suave */
+    color: #fff; /* Mantém o texto branco */
+}
+
+.b:active {
+    transform: scale(1.05); /* Diminui o tamanho do botão levemente quando clicado */
+    box-shadow: 0 4px 8px rgba(255, 51, 133, 0.3); /* A sombra fica mais suave ao clicar */
+}
+
+.b:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 0 3px rgba(255, 102, 178, 0.6); /* Sombra mais forte para foco */
+}
+
+.b:focus {
+    outline: none;
+}
+
+.b2 {
+width: 90%;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 12px 25px;
+    background-color: #ff66b2; /* Cor suave de rosa */
+    color: white;
+    font-size: 1.3em; /* Aumentar o tamanho da fonte para dar mais destaque */
+    border: 2px solid #ff66b2; /* Borda rosa clara */
+    border-radius: 30px; /* Cantos bem arredondados */
+    cursor: pointer;
+    text-transform: uppercase; /* Deixar o texto maiúsculo para um estilo mais sofisticado */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
+    transition: all 0.4s ease; /* Transição suave para todos os efeitos */
+    box-shadow: 0 6px 12px rgba(255, 102, 178, 0.3); /* Sombra suave no botão */
+    font-weight: bold; /* Deixa o texto mais destacado */
+}
+
+/* Efeito no hover */
+.b2:hover {
+    background-color: #ff3385; /* Cor mais intensa de rosa quando o mouse passa sobre o botão */
+    border-color: #ff3385; /* Altera a cor da borda para o mesmo tom do fundo */
+    box-shadow: 0 8px 16px rgba(255, 51, 133, 0.5); /* Aumenta a sombra no hover */
+    transform: scale(1.1); /* Faz o botão crescer um pouco para um efeito mais suave */
+    color: #fff; /* Mantém o texto branco */
+}
+
+/* Efeito ao clicar */
+.b2:active {
+    transform: scale(1.05); /* Diminui o tamanho do botão levemente quando clicado */
+    box-shadow: 0 4px 8px rgba(255, 51, 133, 0.3); /* A sombra fica mais suave ao clicar */
+}
+
+/* Foco no botão */
+.b2:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 0 3px rgba(255, 102, 178, 0.6); /* Sombra mais forte para foco */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2.5em;
+    }
+
+    .cabecalho h2 {
+        font-size: 1.5em; /* Ajustando para maior clareza em telas menores */
+    }
+
+    .cabecalho .p1 {
+        font-size: 1.2em; /* Ajustando o tamanho do texto */
+        max-width: 95%;
+    }
+
+    /* Ajusta o grid para uma coluna */
+    .pag2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Botões responsivos */
+    .b, .b2 {
+        width: 90%; /* Ajustando a largura dos botões para telas pequenas */
+        margin: 0 auto; /* Centraliza os botões */
+    }
+}

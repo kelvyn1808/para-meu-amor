@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente de cor suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 20px;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    flex-direction: column;
+}
+
+/* Wrapper central */
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; /* Centraliza o texto dentro do wrapper */
+}
+
+/* Seção de introdução */
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 3.5em;
+    color: #ff3385;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+.intro p {
+    font-size: 1.3em;
+    color: #333;
+    font-style: italic;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Seção de vídeo */
+.video-container {
+    margin-top: 50px;
+}
+
+.video-container h2 {
+    font-size: 2.5em;
+    color: #ff3385;
+    margin-bottom: 20px;
+}
+
+/* Estilos do vídeo */
+video {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de mensagem */
+.mensagem {
+    margin-top: 50px;
+}
+
+.mensagem h2 {
+    font-size: 2.5em;
+    color: #ff3385;
+    margin-bottom: 20px;
+}
+
+.mensagem p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    font-style: italic;
+}
+
+/* Botão de surpresa */
+.carta button {
+    background-color: #ff3385;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carta button:hover {
+    background-color: #ff66b2;
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 60px;
+    font-size: 1.2em;
+    color: #777;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    .mensagem h2 {
+        font-size: 2em;
+    }
+
+    .mensagem p {
+        font-size: 1em;
+    }
+
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+}
