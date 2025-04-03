@@ -31,6 +31,7 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center; /* Centraliza o texto dentro do wrapper */
+    margin: auto;
 }
 
 /* Seção de introdução */
